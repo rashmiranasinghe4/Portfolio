@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--FC222016 R D R P Ranasinghe -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #1f2937;
+      color: #ffffff;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    
+    .section1 h2,
+    .section1 h4 {
+      margin: 0;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: black;
+    }
+
+    .about-me-section {
+      background-color: #82aad5;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-left:450px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .info-item img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .info-item p {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .section2, .section3, .section4, .section5 {
+      padding: 50px 0;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      background-color: #111827;
+      padding: 20px;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .skills-bar .bar {
+      background: #34495e;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      height: 20px;
+    }
+
+    .skills-bar .bar span {
+      display: block;
+      height: 100%;
+      background: #3498db;
+      border-radius: 10px;
+    }
+
+    .btn-download {
+      background-color: #3498db;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      color: white;
+      border-radius: 8px;
+      margin-top: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-download:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #212529;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      footer {
+        padding: 10px 5px;
+        font-size: 14px;
+      }
+      .social-icons a img {
+        width: 30px;
+        height: 30px;
+      }
+      footer p {
+        font-size: 14px;
+      }
+    }
+
+    .section5 {
+      padding-bottom: 120px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Header Section --> 
+
+  <header class="d-flex justify-content-between align-items-center px-4 py-3 bg-secondary text-white">
+    <div class="section1">
+      <h2 class="mb-0">Rashmi Prabodha</h2>
+      <h4 class="mb-0">SE - Undergraduate Student</h4>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about"><h5>About</h5></a></li>
+            <li class="nav-item"><a class="nav-link" href="#education"><h5>Education & Skills</h5></a></li>
+            <li class="nav-item"><a class="nav-link" href="#activities"><h5>Activities</h5></a></li>
+            <li class="nav-item"><a class="nav-link" href="#achievements"><h5>Achievements</h5></a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects"><h5>Projects</h5></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><h5>Contact</h5></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Section --> 
+   
+  <section id="about" class="about-me-section py-5 bg-info text-dark" >
+    <div class="container">
+      <h1 class="text-center fw-bold mb-5">About Me</h1>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="images\rashmi2.jpeg.jpg" alt="My Photo" class="img-fluid rounded-circle " style="width: 300px; height: 300px; ">
+        </div>
+        <div class="col-md-8">
+          <h2 class="fw-bold">Who am I?</h2>
+          <p style="font-size:20px;font-style: normal">
+            I'm a dedicated Software Engineering undergraduate at the University of Sri Jayewardenepura with a strong passion for web development, UI/UX design, and system architecture. I’m driven by the challenge of building real-world software solutions that are both efficient and impactful.
+          </p>
+          <p style="font-size:20px;font-style: normal">
+            When I'm not coding or designing, you can find me attending tech meetups, organizing university events, or learning about new frontend and backend development tools. I believe in continual progress and love working in dynamic, team-based organizations.
+         </p>
+        </div>
+      </div>
+      <div class="contact-info mt-4">
+        <div class="info-item"><img src="images\icons8-email-50.png" alt="email icon"><p>rpranasinghe1104@gmail.com</p></div>
+        <div class="info-item"><img src="images\icons8-call-50.png" alt="phone icon"><p>+94 71 035 7711</p></div>
+        <div class="info-item"><img src="images\icons8-location-50.png" alt="location icon"><p>No.77 Koongahavila Road,Dampe,Meegoda</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section --> 
+
+  <div id="education" class="container section2">
+  <h1 class="text-center fw-bold mb-5">Education & Skills</h1>
+  
+  <!--Education-->
+  <div class="row g-3">
+    <div class="col-md-6 d-flex">
+      <div class="card w-100 bg-secondary text-white">
+        <div class="card-body">
+          <div class="section-header">
+            <img src="images\icons8-education-64.png" alt="Education Icon" style="height:100px; width:100px">
+            <h2>Education</h2>
+          </div>
+          <div class="mb-4">
+            <h3 class="card-title text-white">BSc in Software Engineering</h3>
+            <h5 class="card-subtitle text-white">University of Sri Jayewardenepura</h5>
+            <p class="card-text">2024 - Present<br>Currently in my 2nd year with a focus on Software Engineering. GPA: 3.65/4.0</p>
+          </div>
+          <div>
+            <h3 class="card-title text-white">GCE Advanced Level</h3>
+            <h5 class="card-subtitle text-white">Mahinda Rajapaksha College, Homagama</h5>
+            <p class="card-text">2019 - 2022<br>Physical Science Stream - Mathematics (B), Physics (C), Chemistry (A)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="col-md-6 d-flex">
+      <div class="card w-100 bg-secondary text-white">
+        <div class="card-body">
+          <div class="section-header ">
+            <img src="images\multitasking.png" alt="Skills Icon"style="height:100px; width:100px">
+            <h2>Skills</h2>
+          </div>
+          <div class="skills-bar">
+            <div>HTML <div class="bar"><span style="width: 90%"></span></div></div>
+            <div>CSS <div class="bar"><span style="width: 85%"></span></div></div>
+            <div>JavaScript <div class="bar"><span style="width: 80%"></span></div></div>
+            <div>Python <div class="bar"><span style="width: 75%"></span></div></div>
+            <div>Java <div class="bar"><span style="width: 75%"></span></div></div>
+            <div>SQL <div class="bar"><span style="width: 75%"></span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+   <!-- Activities Section --> 
+  <div id="activities" class="container section3">
+  <h1 class="text-center fw-bold mb-5">Extra Curricular Activities</h1>   
+
+
+  <div class="row g-3">
+    <!-- Student Societies -->
+    <div class="col-md-6 d-flex "> 
+      <div class="card w-100">
+        <div class="card-body ">
+          <img src="images\people-icon-150nw-289551026.jpg" alt="Student Icon" style="height:100px; width:100px">
+          <h2>Student Societies</h2>
+          <ul>
+            <li><h5>Standing Committee Member, WIE Affinity Group, IEEE student Branch, USJ </h5></li>
+            <li><h5>Standing Committee Member, Association of Computing students, USJ</h5></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sports & Hobbies -->
+    <div class="col-md-6 d-flex">
+      <div class="card w-100">
+        <div class="card-body">
+          <img src="images\images.jpeg" alt="Sports Icon"style="height:100px; width:100px">
+          <h2>Sports & Hobbies</h2>
+          <ul>
+            <li><h5>Chess Club Member</h5></li>
+            <li><h5>Badminton - School Team Captain</h5></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Achievements -->
+<div id="achievements" class="container section4">
+  <h1 class="text-center fw-bold mb-5">Achievements</h1>
+
+  <div class="row g-3">
+    <!-- Awards -->
+    <div class="col-md-6 d-flex">
+      <div class="card w-100  bg-secondary text-white">
+        <div class="card-body">
+          <div class="section-header">
+            <img src="images\trophy.png" alt="Award Icon"style="height:100px; width:100px">
+            <h2 class="card-title">Awards</h2>
+          </div>
+          <ul>
+            <li><h5>Zonal-level badminton competition award winner</h5></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="col-md-6 d-flex">
+      <div class="card w-100 bg-secondary text-white">
+        <div class="card-body">
+          <div class="section-header">
+            <img src="images\medal.png" alt="Certificate Icon"style="height:100px; width:100px">
+            <h2 class="card-title">Certifications</h2>
+          </div>
+          <ul>
+            <li><h5>Deep Learning Specialization – Coursera</h5></li>
+            <li><h5>Python Programming – UOM Online Learning Program</h5></li>
+            <li><h5>TechXplore 1.0 Participant – University of Sri Jayewardenepura</h5></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects-->
+
+<div id="projects" class="container section5">
+  <h1 class="text-center fw-bold mb-5">Projects</h1>
+
+  <div class="row g-4">
+    <!-- Project 1 -->
+    <div class="col-md-6 d-flex">
+      <div class="card w-100">
+        <img src="images\Screenshot 2025-07-07 114517.png" alt="Portfolio Project" />
+        <h2>Portfolio Website</h2>
+        <h5>
+          A personal web platform designed to showcase projects, skills, and achievements, built using HTML and CSS for an interactive and visually appealing user experience.
+        </h5>
+        <h6><strong>Tools:</strong> HTML, CSS, Bootstrap</h6>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-md-6 d-flex">
+      <div class="card w-100">
+        <img src="images\Screenshot 2025-07-06 101648.png" alt="Study Nest Project" />
+        <h2>Study Nest Website</h2>
+        <h5>
+          A platform where students can access and share exam papers efficiently. Built using structured SQL database and developed with HTML, CSS, and JavaScript for user-friendly interaction.
+        </h5>
+        <h6><strong>Tools:</strong> HTML, CSS, PHP, SQL,JavaScript</h6>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- Contact-->
+  <div id="contact" class="section2 container py-5">
+   <h1 class="text-center fw-bold mb-5">Contact Me</h1>
+
+  <div class="row justify-content-between bg-secondary text-white">
+    <!--  Contact Info -->
+    <div class="col-md-6 mb-4">
+      <h2>Contact Information</h2>
+      <div class="mb-3 d-flex align-items-center">
+        <img src="images\icons8-email-50.png" alt="Email Icon" width="24" height="24" class="me-2">
+        <h5>rpranasinghe1104@gmail.com</h5>
+      </div>
+      <div class="mb-3 d-flex align-items-center">
+        <img src="images\icons8-call-50.png" alt="Phone Icon" width="24" height="24" class="me-2">
+        <h5>+94 71 035 7711</h5>
+      </div>
+      <div class="mb-3 d-flex align-items-center">
+        <img src="images\icons8-location-50.png" alt="Location Icon" width="24" height="24" class="me-2">
+        <h5>Colombo, Sri Lanka</h5>
+      </div>
+    </div>
+
+    <!--  Social Icons -->
+    <div class="col-md-5 mb-4">
+      <h2>Connect with me</h2>
+      <div class="d-flex gap-4">
+        <a href="https://www.linkedin.com/in/rashmi-ranasinghe-559aa0318" target="_blank">
+          <img src="images\linkedin.png" alt="LinkedIn" width="40" height="40">
+        </a>
+        <a href="https://github.com/rashmiranasinghe4" target="_blank">
+          <img src="images\social.png" alt="GitHub" width="40" height="40">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download CV Button -->
+  <div class="mt-4">
+    <a href="CV.pdf" download>
+      <button class="btn btn-primary"><h3>Download My CV</h3></button>
+    </a>
+  </div>
+</div>
+
+
+
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 w-100">
+    <div class="container">
+      <div class="d-flex justify-content-center gap-4 mb-3 social-icons">
+        <a href="https://www.linkedin.com/in/rashmi-ranasinghe-559aa0318" target="_blank">
+          <img src="images\linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/rashmiranasinghe4" target="_blank">
+          <img src="images\social.png" alt="GitHub">
+        </a>
+        <a href="https://www.facebook.com/share/1BwgxhfBCV/" target="_blank">
+          <img src="images\sm-icons-facebook-logo.webp" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/rash_ranasinghe?igsh=dHQ3MnV1cXN3Y21h" target="_blank">
+          <img src="images\instagram.png" alt="Instagram">
+        </a>
+      </div>
+      <p class="mb-0">&copy; 2025 Rashmi Prabodha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
